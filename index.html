@@ -28,9 +28,7 @@
     font-family:'Poppins',sans-serif;
 }
 
-html{
-    scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth;}
 
 body{
     background:var(--dark);
@@ -38,7 +36,6 @@ body{
 }
 
 /* NAVBAR */
-
 nav{
     display:flex;
     justify-content:space-between;
@@ -77,16 +74,10 @@ nav{
     padding:8px 15px;
     border-radius:30px;
     cursor:pointer;
-    transition:.3s;
     font-weight:600;
 }
 
-.lang-switch button:hover{
-    background:var(--primary);
-}
-
 /* HERO */
-
 .hero{
     min-height:90vh;
     display:flex;
@@ -99,9 +90,7 @@ nav{
     url('images/bg.jpg') center/cover;
 }
 
-.hero-content{
-    max-width:800px;
-}
+.hero-content{max-width:800px;}
 
 .hero h1{
     font-size:clamp(40px,7vw,80px);
@@ -126,15 +115,9 @@ nav{
     color:white;
     text-decoration:none;
     font-weight:600;
-    transition:.3s;
-}
-
-.cta:hover{
-    transform:scale(1.05);
 }
 
 /* TRUST */
-
 .trust{
     display:flex;
     justify-content:center;
@@ -148,11 +131,9 @@ nav{
     border:1px solid rgba(255,255,255,.08);
     padding:18px 25px;
     border-radius:15px;
-    backdrop-filter:blur(10px);
 }
 
 /* PRODUCTS */
-
 .products{
     padding:80px 8%;
 }
@@ -162,9 +143,7 @@ nav{
     margin-bottom:50px;
 }
 
-.section-title h2{
-    font-size:42px;
-}
+.section-title h2{font-size:42px;}
 
 .cards{
     display:flex;
@@ -182,9 +161,7 @@ nav{
     transition:.4s;
 }
 
-.card:hover{
-    transform:translateY(-10px);
-}
+.card:hover{transform:translateY(-10px);}
 
 .card img{
     width:100%;
@@ -195,14 +172,6 @@ nav{
 .card-content{
     padding:25px;
     text-align:center;
-}
-
-.card-content h2{
-    margin-bottom:10px;
-}
-
-.card-content p{
-    color:var(--muted);
 }
 
 .price{
@@ -222,23 +191,15 @@ nav{
     font-size:16px;
     font-weight:600;
     cursor:pointer;
-    transition:.3s;
-}
-
-.btn:hover{
-    opacity:.9;
 }
 
 /* ABOUT */
-
 .about{
     padding:80px 10%;
     text-align:center;
 }
 
-.about h2{
-    font-size:40px;
-}
+.about h2{font-size:40px;}
 
 .about p{
     max-width:700px;
@@ -247,8 +208,20 @@ nav{
     line-height:1.8;
 }
 
-/* FOOTER */
+/* VIDEO SECTION */
+.video-section{
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+}
 
+.video-section video{
+    max-width:700px;
+    width:100%;
+    border-radius:20px;
+}
+
+/* FOOTER */
 footer{
     text-align:center;
     padding:40px 20px;
@@ -256,8 +229,7 @@ footer{
     color:var(--muted);
 }
 
-/* WHATSAPP FLOAT */
-
+/* WHATSAPP */
 .whatsapp{
     position:fixed;
     bottom:20px;
@@ -272,26 +244,12 @@ footer{
     color:white;
     text-decoration:none;
     font-size:28px;
-    box-shadow:0 5px 20px rgba(0,0,0,.3);
 }
 
 /* RESPONSIVE */
-
 @media(max-width:768px){
-
-    nav{
-        padding:20px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
     .section-title h2,
-    .about h2{
-        font-size:32px;
-    }
-
+    .about h2{font-size:32px;}
 }
 
 </style>
@@ -299,370 +257,122 @@ footer{
 
 <body>
 
-<!-- NAVBAR -->
-
 <nav>
-
     <div class="logo">Bissap Ivoire</div>
 
     <div class="nav-right">
-
-        <a href="#products" id="nav-products">Produits</a>
-
-        <a href="#contact" id="nav-contact">Contact</a>
+        <a href="#products">Produits</a>
+        <a href="#contact">Contact</a>
 
         <div class="lang-switch">
-
             <button onclick="setLang('fr')">FR</button>
-
             <button onclick="setLang('en')">EN</button>
-
         </div>
-
     </div>
-
 </nav>
 
 <!-- HERO -->
-
 <section class="hero">
-
     <div class="hero-content">
-
-        <h1 id="hero-title">
-            Boissons naturelles
-        </h1>
-
-        <p id="hero-text">
-            Bissap & Gingembre faits maison • Livraison rapide à Abidjan
-        </p>
-
-        <a href="#products" class="cta" id="hero-btn">
-            Commander maintenant
-        </a>
-
+        <h1 id="hero-title">Boissons naturelles</h1>
+        <p id="hero-text">Bissap & Gingembre faits maison • Livraison rapide à Abidjan</p>
+        <a href="#products" class="cta" id="hero-btn">Commander maintenant</a>
     </div>
-
 </section>
 
 <!-- TRUST -->
-
 <section class="trust">
-
-    <div class="trust-box" id="trust1">
-        ✅ 100% naturel
-    </div>
-
-    <div class="trust-box" id="trust2">
-        🚀 Livraison rapide
-    </div>
-
-    <div class="trust-box" id="trust3">
-        💳 Paiement Wave / OM
-    </div>
-
+    <div class="trust-box" id="trust1">✅ 100% naturel</div>
+    <div class="trust-box" id="trust2">🚀 Livraison rapide</div>
+    <div class="trust-box" id="trust3">💳 Paiement Wave / OM</div>
 </section>
 
 <!-- PRODUCTS -->
-
 <section class="products" id="products">
 
     <div class="section-title">
-
-        <h2 id="product-title">
-            Nos boissons
-        </h2>
-
+        <h2 id="product-title">Nos boissons</h2>
     </div>
 
     <div class="cards">
 
-        <!-- BISSAP -->
-
         <div class="card">
-
-            <img src="images/bissap.jfif" alt="Bissap">
-
+            <img src="images/bissap.jfif">
             <div class="card-content">
-
-                <h2 id="bissap-name">Bissap 1L </h2>
-
-                <p id="bissap-desc">
-                    Boisson fraîche naturelle riche en goût.
-                </p>
-
-                <div class="price">
-                    1500 FCFA
-                </div>
-
-                <button class="btn"
-                onclick="commander('Bissap',1500)"
-                id="btn1">
-
-                    Commander
-
-                </button>
-
+                <h2>Bissap 1L</h2>
+                <p id="bissap-desc">Boisson fraîche naturelle riche en goût.</p>
+                <div class="price">1500 FCFA</div>
+                <button class="btn" onclick="commander('Bissap',1500)">Commander</button>
             </div>
-
         </div>
 
-        <!-- GINGEMBRE -->
-
         <div class="card">
-
-            <img src="images/gimgembre.jfif" alt="Gingembre">
-
+            <img src="images/gimgembre.jfif">
             <div class="card-content">
-
-                <h2 id="ginger-name">Gingembre 1L </h2>
-
-                <p id="ginger-desc">
-                    Énergisant naturel au goût intense.
-                </p>
-
-                <div class="price">
-                    1500 FCFA
-                </div>
-
-                <button class="btn"
-                onclick="commander('Gingembre',1500)"
-                id="btn2">
-
-                    Commander
-
-                </button>
-
+                <h2 id="ginger-name">Gingembre 1L</h2>
+                <p id="ginger-desc">Énergisant naturel au goût intense.</p>
+                <div class="price">1500 FCFA</div>
+                <button class="btn" onclick="commander('Gingembre',1500)">Commander</button>
             </div>
-
         </div>
 
     </div>
-
 </section>
 
 <!-- ABOUT -->
-
 <section class="about">
-
-    <h2 id="about-title">
-        Pourquoi nous choisir ?
-    </h2>
-
-    <p id="about-text">
-        Nous préparons chaque bouteille avec des ingrédients frais,
-        naturels et une hygiène irréprochable.
-    </p>
-
+    <h2 id="about-title">Pourquoi nous choisir ?</h2>
+    <p id="about-text">Nous préparons chaque bouteille avec des ingrédients frais, naturels et une hygiène irréprochable.</p>
 </section>
 
-     <div class="row" style="display: flex; justify-content: center;">
-        <video autoplay muted loop playsinline controls style="max-width: 100%; width: 50%; height: auto;">
-            <source src="images/bissap.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
-    </div>
-        <br/><br/>
+<!-- VIDEO -->
+<section class="video-section">
+    <video autoplay muted loop playsinline controls>
+        <source src="images/bissap.mp4" type="video/mp4">
+    </video>
+</section>
 
 <!-- FOOTER -->
-
 <footer id="contact">
-
     <p id="footer-text">
         © 2026 Bissap Ivoire <br><br>
         WhatsApp : +225 07 58 16 75 37
     </p>
-
 </footer>
 
-<!-- WHATSAPP -->
-
-<a class="whatsapp"
-href="https://wa.me/2250758167537">
-
-💬
-
-</a>
-
-<!-- SCRIPT -->
+<a class="whatsapp" href="https://wa.me/2250758167537">💬</a>
 
 <script>
+let currentLang="fr";
 
-let currentLang = "fr";
-
-const translations = {
-
-    fr: {
-
-        navProducts:"Produits",
-        navContact:"Contact",
-
-        heroTitle:"Boissons naturelles",
-
-        heroText:
-        "Bissap & Gingembre faits maison • Livraison rapide à Abidjan",
-
-        heroBtn:"Commander maintenant",
-
-        trust1:"✅ 100% naturel",
-        trust2:"🚀 Livraison rapide",
-        trust3:"💳 Paiement Wave / OM",
-
-        productTitle:"Nos boissons",
-
-        bissapDesc:
-        "Boisson fraîche naturelle riche en goût.",
-
-        gingerName:"Gingembre",
-
-        gingerDesc:
-        "Énergisant naturel au goût intense.",
-
-        btn:"Commander",
-
-        aboutTitle:"Pourquoi nous choisir ?",
-
-        aboutText:
-        "Nous préparons chaque bouteille avec des ingrédients frais, naturels et une hygiène irréprochable.",
-
-        footer:
-        "© 2026 Bissap Ivoire <br><br> WhatsApp : +225 07 58 16 75 37"
-
-    },
-
-    en: {
-
-        navProducts:"Products",
-        navContact:"Contact",
-
-        heroTitle:"Natural Drinks",
-
-        heroText:
-        "Homemade Bissap & Ginger • Fast delivery in Abidjan",
-
-        heroBtn:"Order Now",
-
-        trust1:"✅ 100% Natural",
-        trust2:"🚀 Fast Delivery",
-        trust3:"💳 Wave / OM Payment",
-
-        productTitle:"Our Drinks",
-
-        bissapDesc:
-        "Fresh natural drink full of flavor.",
-
-        gingerName:"Ginger",
-
-        gingerDesc:
-        "Natural energizing drink with strong taste.",
-
-        btn:"Order Now",
-
-        aboutTitle:"Why Choose Us?",
-
-        aboutText:
-        "We prepare every bottle with fresh natural ingredients and guaranteed hygiene.",
-
-        footer:
-        "© 2026 Bissap Ivoire <br><br> WhatsApp: +225 07 58 16 75 37"
-
-    }
-
+const translations={
+fr:{
+heroTitle:"Boissons naturelles",
+heroText:"Bissap & Gingembre faits maison • Livraison rapide à Abidjan",
+heroBtn:"Commander maintenant",
+productTitle:"Nos boissons"
+},
+en:{
+heroTitle:"Natural Drinks",
+heroText:"Homemade Bissap & Ginger • Fast delivery in Abidjan",
+heroBtn:"Order Now",
+productTitle:"Our Drinks"
+}
 };
 
 function setLang(lang){
-
-    currentLang = lang;
-
-    document.getElementById("nav-products").innerHTML =
-    translations[lang].navProducts;
-
-    document.getElementById("nav-contact").innerHTML =
-    translations[lang].navContact;
-
-    document.getElementById("hero-title").innerHTML =
-    translations[lang].heroTitle;
-
-    document.getElementById("hero-text").innerHTML =
-    translations[lang].heroText;
-
-    document.getElementById("hero-btn").innerHTML =
-    translations[lang].heroBtn;
-
-    document.getElementById("trust1").innerHTML =
-    translations[lang].trust1;
-
-    document.getElementById("trust2").innerHTML =
-    translations[lang].trust2;
-
-    document.getElementById("trust3").innerHTML =
-    translations[lang].trust3;
-
-    document.getElementById("product-title").innerHTML =
-    translations[lang].productTitle;
-
-    document.getElementById("bissap-desc").innerHTML =
-    translations[lang].bissapDesc;
-
-    document.getElementById("ginger-name").innerHTML =
-    translations[lang].gingerName;
-
-    document.getElementById("ginger-desc").innerHTML =
-    translations[lang].gingerDesc;
-
-    document.getElementById("btn1").innerHTML =
-    translations[lang].btn;
-
-    document.getElementById("btn2").innerHTML =
-    translations[lang].btn;
-
-    document.getElementById("about-title").innerHTML =
-    translations[lang].aboutTitle;
-
-    document.getElementById("about-text").innerHTML =
-    translations[lang].aboutText;
-
-    document.getElementById("footer-text").innerHTML =
-    translations[lang].footer;
-
+currentLang=lang;
+document.getElementById("hero-title").innerHTML=translations[lang].heroTitle;
+document.getElementById("hero-text").innerHTML=translations[lang].heroText;
+document.getElementById("hero-btn").innerHTML=translations[lang].heroBtn;
+document.getElementById("product-title").innerHTML=translations[lang].productTitle;
 }
 
-function commander(produit, prix){
-
-    let numero = "2250758167537";
-
-    let message = "";
-
-    if(currentLang === "fr"){
-
-        message =
-`Bonjour 👋
-
-Je souhaite commander :
-
-🥤 Produit : ${produit}
-💰 Prix : ${prix} FCFA`;
-
-    }
-
-    else{
-
-        message =
-`Hello 👋
-
-I would like to order:
-
-🥤 Product: ${produit}
-💰 Price: ${prix} FCFA`;
-
-    }
-
-    window.open(
-`https://wa.me/${numero}?text=${encodeURIComponent(message)}`
-    );
-
+function commander(produit,prix){
+let numero="2250758167537";
+let msg=`Commande: ${produit} - ${prix} FCFA`;
+window.open(`https://wa.me/${numero}?text=${encodeURIComponent(msg)}`);
 }
-
 </script>
 
 </body>
